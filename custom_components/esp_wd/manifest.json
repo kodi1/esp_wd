@@ -1,0 +1,8 @@
+{
+  "domain": "esp_wd",
+  "name": "easy esp monitor",
+  "documentation": "https://github.com/kodi1/esp_wd",
+  "dependencies": [],
+  "codeowners": ["@kodi1"],
+  "requirements": []
+}
