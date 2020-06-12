@@ -45,7 +45,7 @@ if __name__ == '__main__':
 else:
   import voluptuous as vol
   from datetime import timedelta
-  from homeassistant.components.binary_sensor import BinarySensorDevice
+  from homeassistant.components.binary_sensor import BinarySensorEntity
   import homeassistant.helpers.config_validation as cv
   from homeassistant.components.sensor import PLATFORM_SCHEMA
   from homeassistant.const import (
@@ -65,7 +65,7 @@ else:
       name = config.get(CONF_NAME)
       add_devices([EspSensor(host, name, 'connectivity')], True)
 
-  class EspSensor(BinarySensorDevice):
+  class EspSensor(BinarySensorEntity):
       """Representation of a Sensor."""
       def __init__(self, host, name, device_type):
           """Initialize the sensor."""
