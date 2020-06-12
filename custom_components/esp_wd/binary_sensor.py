@@ -65,7 +65,7 @@ else:
       name = config.get(CONF_NAME)
       add_devices([EspSensor(host, name, 'connectivity')], True)
 
-  class EspSensor(BinarySensorDevice):
+  class EspSensor(BinarySensorEntity):
       """Representation of a Sensor."""
       def __init__(self, host, name, device_type):
           """Initialize the sensor."""
