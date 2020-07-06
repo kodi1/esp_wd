@@ -31,7 +31,7 @@ _data_re = [
     {'re': r'Boot\ count.*?(\d+)', 'name': 'boot_count'},
     {'re': r'boot[\s\S]*?(\w+\s\w+)', 'name': 'boot_cause'},
     {'re': r'boot[\s\S]*?(\d+)', 'name': 'boot_count'},
-    {'re': r'client\sip.*?(\d+\.\d+\.\d+\.\d+)', 'name': 'ip'},
+    {'re': r'.*subnet.*?(\d+\.\d+\.\d+\.\d+)', 'name': 'ip'},
     {'re': r'free\smem.*?(\d+)', 'name': 'mem'},
   ]
 
